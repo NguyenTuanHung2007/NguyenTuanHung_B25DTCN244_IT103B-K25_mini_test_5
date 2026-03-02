@@ -52,7 +52,7 @@ const filterCategory = (obj) =>{
 console.log(filterCategory(products));
 
 // Case 3
-let totalSum = (obj) =>{
+const totalSum = (obj) =>{
     let result2 = obj.filter(s => s.inStock === true).reduce((total,b) => total + b.price, 0);
     return `Tổng là: ${result2}`; 
 }
